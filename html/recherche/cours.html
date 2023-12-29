@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univ</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="">
+
+    <!-- MENU -->
+
+    <div class="relative">
+        <img src="/images/extra-images/banner-03.jpg" class="absolute inset-0 h-full w-full object-cover" alt="" />
+
+
+        <div class="relative bg-gray-950 bg-opacity-90  border-b shadow-teal-900 shadow-md ">
+
+            <nav class=" container mx-auto px-6  text-white mb-10 md:px-12 xl:px-20">
+                
+                <div class="  flex flex-wrap items-center justify-between mx-auto p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <img src="/images/chapeau.png" class="h-24 w-24" alt="Flowbite Logo" />
+                        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Camp
+                            Univ</span>
+                    </a>
+                    <button data-collapse-toggle="navbar-dropdown" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-dropdown" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                        <ul
+                            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  text-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+
+                            <li>
+                                <a href="/html/index.html"
+                                    class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <!-- recherche -->
+                            <li>
+                                <button id="dropdownNavbaLink" data-dropdown-toggle="dropdownNavba"
+                                    class="flex items-center justify-between w-full py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">
+                                    Recherche <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavba"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                        aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="travail.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Travail
+                                                Scientifique</a>
+                                        </li>
+                                        <li>
+                                            <a href="cours.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Cours</a>
+                                        </li>
+                                        <li>
+                                            <a href="livres.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Livres</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <!-- News -->
+                            <li>
+                                <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                                    class="flex items-center justify-between w-full py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent capitalize">
+                                    news
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavbar"
+                                    class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                        aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="/html/news/actualite.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize">actualités</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/html/news/evenement.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize">evenement</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <!-- Enseignement -->
+
+                            <li>
+                                <button id="dropdownNavbLink" data-dropdown-toggle="dropdownNavb"
+                                    class="flex items-center justify-between w-full py-2 px-3   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent capitalize">
+                                    Enseignement
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                                <!-- Dropdown menu -->
+                                <div id="dropdownNavb"
+                                    class="z-10 hidden   text-white font-bold divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                    <ul class="py-2 text-sm   dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="/html/enseignement/deliberation.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize">Déliberation</a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/enseignement/sujet.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize">sujet</a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/inscription/inscription.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize">inscription</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/html/enseignement/horaire.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize">Horaire
+                                                des cours</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+                            <!-- Université -->
+
+                            <li>
+                                <button id="universiteLink" data-dropdown-toggle="universite"
+                                    class="flex items-center justify-between w-full py-2 px-3   rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent capitalize">
+                                    Univeristé
+                                    <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
+                                </button>
+                                <!-- Dropdown menu -->
+                                <div id="universite"
+                                    class="z-10 hidden font-normal  text-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                                    <ul class="py-2 text-sm text-bold   dark:text-gray-400"
+                                        aria-labelledby="dropdownLargeButton">
+                                        <li>
+                                            <a href="/html/universite/about.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize font-bold">Apropos
+                                                de Nous</a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/universite/equipe.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize font-bold">Enseignant</a>
+                                        </li>
+                                        <li>
+                                            <a href="/html/universite/contact.html"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white capitalize font-bold">Contact</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent capitalize">se
+                                    connecter</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <section class=" text-white  ">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-8 lg:pb-20 lg:px-12">
+                    <p class="  text-sm   text-yellow-400 font-bold lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+                        The best Learning Institution.</p>
+                    <p
+                        class="mb-4 text-4xl font-bold tracking-tight leading-none text-gray-100 md:text-5xl lg:text-6xl dark:text-white">
+                        Welcom to Our Univ Camp</p>
+
+                    <p class="mb-8 text-sm font-normal text-gray-100   sm:px-16 xl:px-64 dark:text-gray-400">
+                        Here at Flowbite we focus on markets where technology, innovation, and capital can unlock
+                        long-term value and drive economic growth.</p>
+
+                    <div
+                        class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+
+                        <a href="#"
+                            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-100 rounded-lg border border-gray-300 hover:text-gray-950 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                            <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z">
+                                </path>
+                            </svg>
+                            Learn more
+                        </a>
+                        <a href="#"
+                            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-100 rounded-lg border border-gray-300 hover:text-gray-950 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+    <!-- COURS -->
+
+
+    <div class="container mx-auto px-6 pt-12 mb-10 md:px-12 xl:px-20">
+        <div class="p-2 rounded">
+            <div class="flex flex-col md:flex-row gap-5">
+
+                <div class="md:w-1/3 text-sm">
+
+                    <div class="sticky inset-x-0 top-0 left-0 py-12">
+
+                        <div class="relative pb-6 text-gray-600 mt-8 lg:mr-16">
+                            <input x-ref="searchField" x-model="search"
+                                x-on:keydown.window.prevent.slash="$refs.searchField.focus()" type="search" name="serch"
+                                placeholder="Recherchez un cours"
+                                class="bg-white w-full h-10 px-5   shadow border-none text-sm focus:outline-none">
+                            <button type="submit" class="focus:outline-none absolute right-0 top-0 mt-3 mr-4">
+                                <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                    viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                                    xml:space="preserve" width="512px" height="512px">
+                                    <path
+                                        d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                                </svg>
+                            </button>
+                        </div>
+
+
+
+                        <div class="text-xl font-bold text-green-800 mb-4 font-serif">INFORMATIQUE</div>
+                        <ul>
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                INFORMATIQUE
+                            </li>
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                BIOLOGIE
+                            </li>
+
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                NURSING
+                            </li>
+
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                Wiew All....
+                            </li>
+
+
+
+
+                        </ul>
+
+                        <div class="text-xl font-bold text-green-800 mt-4 font-serif">ISTM</div>
+                        <ul>
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                INFORMATIQUE
+                            </li>
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                BIOLOGIE
+                            </li>
+
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                NURSING
+                            </li>
+
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                Wiew All....
+                            </li>
+
+
+
+
+                        </ul>
+
+                        <div class="text-xl font-bold text-green-800 mt-4 font-serif">ISP</div>
+                        <ul>
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                INFORMATIQUE
+                            </li>
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                BIOLOGIE
+                            </li>
+
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                NURSING
+                            </li>
+
+                            <li
+                                class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                                Wiew All....
+                            </li>
+
+
+
+
+                        </ul>
+
+
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+                <div class="md:w-2/3   py-12 ">
+                    <div class=" ">
+
+
+                        <div class="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-5">
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+                            </div>
+
+                            <div class=" rounded-lg border shadow">
+                                <img src="../image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                                <h2 class="px-2 pt-6 text-sm text-center font-serif ">Initiation au système
+                                    d'exploitation
+                                    KALI LUNIX</h2>
+                                <a href=""><p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p></a>
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+ <!-- --------------FOOTER------------------------- -->
+    <footer class="bg-gray-50">
+        <div class="container mx-auto px-6 pt-6   md:px-12 xl:px-20 grid gap-y-8 gap-x-12  py-10 md:grid-cols-2 xl:grid-cols-3  ">
+          <div class="max-w-sm">
+            <div class="mb-6 flex h-12 items-center space-x-2">
+              <span class="text-2xl font-bold">Univ<span class="text-blue-600"> Camp</span>.</span>
+            </div>
+            <div class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis ad a officia ea
+              expedita!</div>
+          </div>
+          <div class="">
+            <div class="mt-4 mb-2 font-medium xl:mb-4">Address</div>
+            <div class="text-gray-500">
+              35 Skybeach, <br />
+              45 Sky Street, <br />
+              Lubumbashi, DRC
+            </div>
+          </div>
+        
+          <div class="">
+            <div class="mt-4 mb-2 font-medium xl:mb-4">Laissez un Commentaire</div>
+            <div class="flex flex-col">
+              <div class="mb-4">
+                <input type="email"
+                  class="focus:outline mb-2 block h-10 w-full rounded-lg bg-gray-100 px-4 sm:w-80 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  placeholder="Enter your email" />
+    
+                  <input type="email"
+                  class="focus:outline mb-2 block h-10 w-full   bg-gray-100 px-4 sm:w-80 focus:outline-none focus:ring-1 focus:ring-blue-600"
+                  placeholder="Votre Commentaire" />
+                  
+    
+                <button class="block rounded-xl bg-blue-600 px-6 py-2 font-medium text-white">Envoyez</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div
+            class="mx-auto flex max-w-screen-xl flex-col gap-y-4 px-4 py-3 text-center text-gray-500 sm:flex-row sm:justify-between sm:text-left">
+            <div class="">© 2024 UnivCamp | All Rights Reserved</div>
+            <div class="">
+              <a class="" href="#">Privacy Policy</a>
+              <span>|</span>
+              <a class="" href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+
+ 
+    <script>
+        const moreTextEl = document.getElementById('more-text');
+        const toggleBtnEl = document.getElementById('toggle-btn');
+        const hideBtnEl = document.getElementById('hide-btn');
+
+        toggleBtnEl.addEventListener('click', () => {
+            moreTextEl.classList.toggle('hidden');
+            toggleBtnEl.classList.toggle('hidden');
+            hideBtnEl.classList.toggle('hidden');
+        });
+
+        hideBtnEl.addEventListener('click', () => {
+            moreTextEl.classList.toggle('hidden');
+            toggleBtnEl.classList.toggle('hidden');
+            hideBtnEl.classList.toggle('hidden');
+        });
+    </script>
+    <script type="module" src="/main.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+
+</html>
