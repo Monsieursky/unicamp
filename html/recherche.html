@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El dorado</title>
+    <link rel="stylesheet" href="blog.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="istm.png" />
+
+</head>
+
+<body class="bg-gray-900">
+
+    <!--  style="background-image: url('chat.jpg')" -->
+
+    <div class="bg-white text-gray-950 bg-cover bg-center  h-full mx-auto">
+
+        <nav class=" border-gray-200 dark:bg-gray-900">
+            <div class="container  flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href=" " class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="istm.png" class="h-8" alt="Flowbite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">El dorado</span>
+                </a>
+                <div class="flex md:order-2">
+                    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                        aria-expanded="false"
+                        class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search</span>
+                    </button>
+                    <div class="relative hidden md:block">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                            <span class="sr-only">Search icon</span>
+                        </div>
+                        <input type="text" id="search-navbar"
+                            class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Recherche...">
+                    </div>
+                    <button data-collapse-toggle="navbar-search" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-search" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                    <div class="relative mt-3 md:hidden">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="search-navbar"
+                            class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search...">
+                    </div>
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  text-gray-950 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 px-3    rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="news.html"
+                                class="block py-2 px-3   rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Actualités</a>
+                        </li>
+                        <li>
+                            <a href="recherche.html"
+                                class="block py-2 px-3   rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Recherche</a>
+                        </li>
+
+                        
+                        <li>
+                            <a href="faculte.html"
+                            class="block py-2 px-3 text-gray-950  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Faculté</a>
+                        </li>
+  
+
+                        <li>
+                            <a href="universite.html"
+                                class="block py-2 px-3 text-gray-950  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Université</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <p class="text-center text-3xl md:text-7xl font-bold text-gray-100  bg-cover bg-center py-32 md:px-36 sm:px-9 md:h-96  "
+            style="background-image: url('7-2048x699.png')">
+            <span class="text-red-500">EL</span> DORADO <span class="text-yellow-400">NURSING</span>
+            <br> <span class="pt-4 text">SCHOOL</span>
+        </p>
+
+        <marquee behavior="" direction="" class="font-bold uppercase md:text-xl bg-white  border-t-8 border-blue-800">  LA REPRISE OFFICIELLE DE COURS POUR L'ANNÉE ACADÉMIQUE 2023-2024 BEL ET BIEN EFFECTIVE</marquee>
+
+    </div>
+
+<!-- ----------- -->
+
+
+<div class=" container px-5 mx-auto rounded  py-10">
+    
+
+    <div class=" grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-10 text-white text-center">
+
+ 
+     <div class="  border border-gray-800 bg-opacity-40 px-8   rounded-lg overflow-hidden text-center relative">
+        <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 pt-3">EL DORADO NURSING</h2>
+      <a href="istm.html">  <h1 class="   title-font sm:text-2xl text-xl font-medium text-white py-6  uppercase">travail de fin de cycle
+        </h1> </a>
+      
+        <a href="istm.html" class="text-indigo-400 inline-flex items-center py-2">Consultez
+          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+     
+      </div>
+ 
+      <div class="  border border-gray-800 bg-opacity-40 px-8   rounded-lg overflow-hidden text-center relative">
+        <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 pt-3">EL DORADO NURSING</h2>
+      <a href="istm.html">  <h1 class="   title-font sm:text-2xl text-xl font-medium text-white py-6  uppercase">mémoire
+        </h1> </a>
+      
+        <a href="istm.html" class="text-indigo-400 inline-flex items-center py-2">Consultez
+          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+     
+      </div>
+
+
+      <div class="  border border-gray-800 bg-opacity-40 px-8   rounded-lg overflow-hidden text-center relative">
+        <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1 pt-3">EL DORADO NURSING</h2>
+      <a href="istm.html">  <h1 class="   title-font sm:text-2xl text-xl font-medium text-white py-6  uppercase">livres
+        </h1> </a>
+      
+        <a href="istm.html" class="text-indigo-400 inline-flex items-center py-2">Consultez
+          <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"></path>
+            <path d="M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+     
+      </div>
+      
+    </div>
+  </div>
+ 
+ 
+
+
+    <!-- ACTUALITE -->
+
+
+  <!--   <div class=" container px-5 mx-auto bg-gray-900 rounded">
+
+        <div class="flex flex-col md:flex-row gap-5">
+
+            <div class="md:w-1/3 text-sm">
+
+                <div class="sticky inset-x-0 top-0 left-0 py-12">
+
+                    <div class="relative pb-6 text-gray-600 mt-8 lg:mr-16">
+                        <input x-ref="searchField" x-model="search"
+                            x-on:keydown.window.prevent.slash="$refs.searchField.focus()" type="search" name="serch"
+                            placeholder="Recherchez un cours"
+                            class="bg-white w-full h-10 px-5   shadow border-none text-sm focus:outline-none">
+                        <button type="submit" class="focus:outline-none absolute right-0 top-0 mt-3 mr-4">
+                            <svg class="h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                                viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                                xml:space="preserve" width="512px" height="512px">
+                                <path
+                                    d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="text-xl font-bold text-white mb-4 font-serif">INFORMATIQUE</div>
+                    <ul class="text-white">
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            INFORMATIQUE
+                        </li>
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            BIOLOGIE
+                        </li>
+
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            NURSING
+                        </li>
+
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            Wiew All....
+                        </li>
+                    </ul>
+
+                    <div class="text-xl font-bold text-white mt-4 font-serif">ISTM</div>
+                    <ul class="text-white">
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            INFORMATIQUE
+                        </li>
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            BIOLOGIE
+                        </li>
+
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            NURSING
+                        </li>
+
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            Wiew All....
+                        </li>
+
+
+
+
+                    </ul>
+
+                    <div class="text-xl font-bold text-white mt-4 font-serif">ISP</div>
+                    <ul class="text-white">
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            INFORMATIQUE
+                        </li>
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            BIOLOGIE
+                        </li>
+
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            NURSING
+                        </li>
+
+                        <li
+                            class="text-md font-serif font-medium hover:bg-slate-300 hovert:text-gray-900 hover:px-4 hover:font-bold hover:font-sans duration-500  cursor-pointer hover:text-center hover:py-2 py-4">
+                            Wiew All....
+                        </li>
+
+
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="md:w-2/3   py-12 ">
+                <div class=" ">
+
+                    <div class="grid lg:grid-cols-3 grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-5 text-white">
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+
+                        </div>
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+                        </div>
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+
+                        </div>
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+
+                        </div>
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+                        </div>
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-1.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+
+                        </div>
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-3.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+
+                        </div>
+
+                        <div class=" rounded-lg border shadow">
+                            <img src="image/course/cu-2.jpg" class="  w-full object-cover object-center" alt="">
+
+                            <h2 class="px-2 pt-6 text-md font-medium text-center font-serif ">Initiation au système
+                                d'exploitation
+                                KALI LUNIX</h2>
+                            <a href="">
+                                <p class=" px-2 hover:font-bold duration-500 text-center py-6">Programmation</p>
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+ -->
+ 
+
+    <!-- FOOTER -->
+
+
+    <footer class="text-gray-400 bg-gray-900 body-font pt-10">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <img src="istm.png" alt="" class="w-10 h-10 text-white p-2 bg-indigo-100 rounded-full">
+                <span class="ml-3 text-xl">El dorado Nursing</span>
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">©
+                2024
+                ISP/ISTM MULONGO
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+
+</html>
